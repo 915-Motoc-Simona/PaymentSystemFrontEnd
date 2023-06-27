@@ -1,0 +1,138 @@
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  overflow: auto;
+}
+
+.home{
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+.login{
+  color: #FFFFFF;
+  margin-left: 13%;
+}
+
+.logout{
+  color: #FFFFFF;
+}
+
+.chart::-webkit-scrollbar {
+  display: none;
+}
+
+.chart {
+  height: 500px;
+  width: 1100px;
+  overflow-y: auto;
+  overflow-x: auto;
+  /* hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.material-ui-datepicker {
+  font-family: Roboto, Arial, sans-serif;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px;
+  outline: none;
+  cursor: pointer;
+}
+
+.material-ui-datepicker input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 16px;
+  color: #000;
+}
+
+.material-ui-datepicker input::placeholder {
+  color: #aaa;
+}
+
+.material-ui-datepicker .react-datepicker__header {
+  background-color: #f5f5f5;
+  border-bottom: none;
+}
+
+.material-ui-datepicker .react-datepicker__day-name,
+.material-ui-datepicker .react-datepicker__day {
+  color: #000;
+}
+
+.material-ui-datepicker .react-datepicker__day--selected,
+.material-ui-datepicker .react-datepicker__day--keyboard-selected {
+  background-color: #3f51b5;
+  color: #fff;
+}
+
+.material-ui-datepicker .react-datepicker__day--selected:hover,
+.material-ui-datepicker .react-datepicker__day--keyboard-selected:hover {
+  background-color: #3949ab;
+}
+
+.material-ui-datepicker .react-datepicker__day--today {
+  font-weight: bold;
+}
+
+.material-ui-datepicker .react-datepicker__day--today:hover {
+  color: #3f51b5;
+}
+
+.material-ui-datepicker .react-datepicker__day--disabled {
+  color: #ccc;
+  cursor: not-allowed;
+}
